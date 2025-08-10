@@ -1,7 +1,7 @@
 
-import { Header, MainContainer } from "../styles/styles";
+import { ComicsDisplay, Header, MainContainer } from "../styles/styles";
 
-import { Search } from "../components/Search";
+import { Comics} from "../components/ComicDisplay";
 
 
 
@@ -15,9 +15,11 @@ export function MainPage() {
         <div className="Logo">
           <h1>Marvel COMICS</h1>
         </div>
-        <Search/>
       </Header>
       
+      <ComicsDisplay>
+        <Comics/>
+      </ComicsDisplay>
     </MainContainer>
   );
 }
